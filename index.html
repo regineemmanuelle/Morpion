@@ -5,55 +5,56 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <script src="script.js" type="text/javascript" async></script> 
         <title>Morpion</title>
+        <script src="script.js" type="text/javascript" async></script>
     </head>
     <body>
-        <h1>bienvenue au morpion club</h1>
-        <h2> Amusez vous bien </h2>
+        <h1> Morpion club</h1>
         <form>
-            <label for="Name">Last Name:</label>
-            <input type="text" name="lastName" id="Name" placeholder="Votre nom">
+            <input type="text"  id="Name" maxlength="1000px" placeholder="Pseudo" style="width: 400px; height: 50px;" >
         </form>
-        <section id="title">
-            <p> </p>
-            <p> VS <br> BOTH</p>
-        </section>
-        <section id="play">
-            <div id="firstColumn">
-                <div  data-index="0" class="box" id="0">
-                    
+        <h3> Voulez-vous jouer en premier? </h3>
+        <input type="button" class="button" id="oui" onclick="javascript:displayText('play');" value="Oui" >
+        <input type="button" class="button" id="non" onclick="javascript:displayText('play');" value="Non" >
+        <div id="play" >
+            <div id="title"></div>
+            <div class="Error"></div>
+            <div class="play" >
+                <div id="firstColumn">
+                    <div  class="box" id="0">
+                        
+                    </div>
+                    <div  class="box" id="1">
+                        
+                    </div>
+                    <div  class="box" id="2">
+                        
+                    </div>
                 </div>
-                <div data-index="1"  class="box" id="1">
-                    
+                <div id="secondColumn">
+                    <div  class="box" id="3">
+                        
+                    </div>
+                    <div  class="box" id="4">
+                        
+                    </div>
+                    <div  class="box" id="5">
+                        
+                    </div>
                 </div>
-                <div  data-index="2" class="box" id="2">
-                    
+                <div id="thirdColumn">
+                    <div  class="box" id="6">
+                        
+                    </div>
+                    <div  class="box" id="7">
+                        
+                    </div>
+                    <div  class="box" id="8">
+                        
+                    </div>
                 </div>
             </div>
-            <div id="secondColumn">
-                <div  data-index="3" class="box" id="3">
-                    
-                </div>
-                <div data-index="4"  class="box" id="4">
-                    
-                </div>
-                <div  data-index="5" class="box" id="5">
-                    
-                </div>
-            </div>
-            <div id="thirdColumn">
-                <div  data-index="6" class="box" id="6">
-                    
-                </div>
-                <div data-index="7"  class="box" id="7">
-                    
-                </div>
-                <div data-index="8"  class="box" id="8">
-                    
-                </div>
-            </div>
-        </section> 
-        <div class="Error"></div>
+            <input type="button" id="again" value="Rejouer" class="button" >
+        </div> 
     </body>
     </html>
