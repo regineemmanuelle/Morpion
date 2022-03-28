@@ -61,8 +61,18 @@ const winner=() =>{
                 ){
                     console.log("tout va bien")
                     botScore = botScore + 1
-                    displayErrors("LE BOTH A GAGNE" + " : " + ' BOTH = ' + botScore + nom + ' = ' + playerScore)
+                    displayErrors("LE BOTH A GAGNE" + " : " + ' BOTH = ' + botScore + ' ' + nom + ' = ' + playerScore)
+                }else if ( positions[0].innerText !== '' && 
+                            positions[1].innerText  !== ''&& 
+                            positions[2].innerText  !== ''&&  
+                            positions[3].innerText !== '' &&  
+                            positions[4].innerText !== '' &&  
+                            positions[5].innerText  !== ''&&  
+                            positions[6].innerText  !== ''&&  
+                            positions[7].innerText !== '' ) {
+                    displayErrors('Egalité')
                 }
+                    
     }
 
 
